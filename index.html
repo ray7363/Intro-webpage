@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Introduction</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background-image: url("https://raw.githubusercontent.com/ray7363/Intro-webpage/refs/heads/main/background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    filter: grayscale(100%) blur(8px);
+
+    opacity: 0.35;
+
+    z-index: -2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141414, #232323);
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+
+    background: rgba(30,30,30,0.6);
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    padding: 40px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    text-align: center;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.3);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.about {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+
+    padding: 12px 24px;
+
+    background: rgba(255,255,255,0.1);
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255,255,255,0.2);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="avatar">
+    <img src="https://raw.githubusercontent.com/ray7363/Intro-webpage/refs/heads/main/images.jpeg">
+</div>
+
+<h1>Ray</h1>
+
+<p class="subtitle">
+(Game Dev / Arch Linux Enjoyer / Yapper) 
+</p>
+
+<p class="about">
+Hey, I'm Ray. I'm 19 years old and I enjoy game development, tech stuff (hardware and software wise)
+and just games in general. My favorite game series is Shin Megami Tensei. Feel free to DM me for anything.
+(and yes, I've learned basic HTML and CSS just to make this and flex my domain)
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
